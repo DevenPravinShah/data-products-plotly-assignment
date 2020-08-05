@@ -1,0 +1,34 @@
+---
+title: "Data Products - Week3 Assignment - Plotly"
+author: "Deven Pravin Shah"
+date: "7/23/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Installing Plotly
+
+```{r install_load_plotly}
+  
+library(plotly)
+  
+```
+
+## 3D Surface Plot
+  
+```{r surface_plot}
+  
+plot_ly(z=volcano, type="surface")
+  
+```
+  
+## Box Plot
+  
+```{r box_plot}
+  
+plot_ly(midwest, x = ~percollege, color = ~state, type = "box")
+  
+```
